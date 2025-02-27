@@ -1,0 +1,395 @@
+export const SERFC_DB_INFO = [ { name: 'presupuesto',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer b5 f2 89 67 06 c6 4c 03 b3 09 47 d7 34 23 a9 45> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.presupuesto' } },
+  { name: 'usuarios',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer 92 24 37 5c 8b 47 40 cf b7 67 37 7c 21 b3 d1 d4> } },
+    idIndex: { v: 2, key: { _id: 1 }, name: '_id_', ns: 'SERFC_DB.usuarios' } },
+  { name: 'registro_permutas',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer fa 75 84 28 50 b4 4d 4d 9b 65 d4 3a 7d b1 e2 73> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.registro_permutas' } },
+  { name: 'modalidades',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer ed c9 11 40 be 6c 49 8a b6 9f ad d1 10 ef b2 ce> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.modalidades' } },
+  { name: 'perfiles',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer 16 a9 d0 15 c0 f7 44 43 89 de 4c b7 6c 28 b4 bb> } },
+    idIndex: { v: 2, key: { _id: 1 }, name: '_id_', ns: 'SERFC_DB.perfiles' } },
+  { name: 'sippe2',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer 9b 05 8d c3 79 1c 41 06 8c 27 6b 84 4d 83 b4 e6> } },
+    idIndex: { v: 2, key: { _id: 1 }, name: '_id_', ns: 'SERFC_DB.sippe2' } },
+  { name: 'system.views',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer 05 28 75 fb f3 eb 4f 2b 9b c1 a6 70 a0 0d 1a 5b> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.system.views' } },
+  { name: 'oferta_formacion',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer 95 3d 55 ca a2 11 46 b1 8a d3 72 f3 a7 0e c1 1e> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.oferta_formacion' } },
+  { name: 'periodicidades',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer dc 03 29 35 58 88 4a aa a7 7c 41 70 72 f2 af ff> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.periodicidades' } },
+  { name: 'tipos_oferta',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer bc 02 db 67 a6 85 48 f8 8f ea 97 35 20 d5 7d 37> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.tipos_oferta' } },
+  { name: 'ccts_aguascalientes',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer d2 38 f9 6b fd c8 48 b1 94 2d 8c b2 f6 29 0f c2> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.ccts_aguascalientes' } },
+  { name: 'registros',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer db 88 21 41 f0 a6 4d d7 a5 3f 73 96 b2 60 fc 68> } },
+    idIndex: { v: 2, key: { _id: 1 }, name: '_id_', ns: 'SERFC_DB.registros' } },
+  { name: 'listas_ordenadas',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer ba f9 07 12 98 82 4e 9d 9d 53 25 a7 dc 10 fa d3> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.listas_ordenadas' } },
+  { name: 'sippe',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer b4 7a 7f b1 96 4e 46 02 a4 55 1d 9b 70 f6 7c 9c> } },
+    idIndex: { v: 2, key: { _id: 1 }, name: '_id_', ns: 'SERFC_DB.sippe' } },
+  { name: 'instituciones_formadoras',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer 5e c8 2c 6e e6 b8 45 21 ac 67 3f 0f 94 14 07 2a> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.instituciones_formadoras' } },
+  { name: 'registro_cambios',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer 1f 6c 33 a1 1a fb 4e 74 96 cb c0 3e 13 c1 b8 9d> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.registro_cambios' } },
+  { name: 'nomina_cambios',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer d5 4b d1 a5 94 3d 42 76 8f 45 30 b4 dc 62 7d 1e> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.nomina_cambios' } },
+  { name: 'niveles_educativos',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer 6f d2 21 37 0d 90 4f 3e 94 60 0c 54 d8 a4 55 5a> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.niveles_educativos' } },
+  { name: 'personal_nomina',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer 2d 82 d0 78 27 fa 45 e3 a3 05 7c cc 44 f1 b6 cc> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.personal_nomina' } },
+  { name: 'ccts_disponibles',
+    type: 'collection',
+    options: {},
+    info: 
+     { readOnly: false,
+       uuid: 
+        { _bsontype: 'Binary',
+          sub_type: 4,
+          position: 16,
+          buffer: <Buffer ec 8c 1a 3e 24 5a 4b aa 9d 2c b6 02 6e 2f 8d d6> } },
+    idIndex: 
+     { v: 2,
+       key: { _id: 1 },
+       name: '_id_',
+       ns: 'SERFC_DB.ccts_disponibles' } },
+  { name: 'Plazas Registradas',
+    type: 'view',
+    options: 
+     { viewOn: 'registro_cambios',
+       pipeline: 
+        [ { '$unwind': 
+             { path: '$plazasRegistradas',
+               includeArrayIndex: 'indice',
+               preserveNullAndEmptyArrays: true } } ] },
+    info: { readOnly: true } },
+  { name: 'plazas permuta',
+    type: 'view',
+    options: 
+     { viewOn: 'registro_permutas',
+       pipeline: [ { '$unwind': { path: '$plazasRegistradas', includeArrayIndex: 'arrayIndex' } } ] },
+    info: { readOnly: true } },
+  { name: 'consulta_reg_fc',
+    type: 'view',
+    options: 
+     { viewOn: 'registros',
+       pipeline: 
+        [ { '$lookup': 
+             { from: 'usuarios',
+               localField: 'usuario',
+               foreignField: '_id',
+               as: 'usuario' } },
+          { '$unwind': { path: '$usuario', preserveNullAndEmptyArrays: true } },
+          { '$lookup': 
+             { from: 'sippe2',
+               localField: 'usuario.usuario',
+               foreignField: 'CURP',
+               as: 'sippe' } },
+          { '$addFields': { funciones: { '$map': { input: '$sippe', as: 'el', in: '$$el.DescripcionFuncionSIPPE' } } } },
+          { '$addFields': { plazas: { '$map': { input: '$sippe', as: 'el', in: '$$el.CategoriadePago' } } } },
+          { '$addFields': { cct: { '$arrayElemAt': [ '$sippe', 0 ] } } },
+          { '$lookup': 
+             { from: 'oferta_formacion',
+               localField: 'oferta_formacion',
+               foreignField: '_id',
+               as: 'oferta_formacion' } },
+          { '$unwind': { path: '$oferta_formacion', preserveNullAndEmptyArrays: true } },
+          { '$addFields': 
+             { grupo: 
+                { '$filter': 
+                   { input: '$oferta_formacion.grupos',
+                     as: 'el',
+                     cond: { '$eq': [ '$$el._id', '$grupo' ] } } } } },
+          { '$unwind': { path: '$grupo', preserveNullAndEmptyArrays: true } },
+          { '$addFields': 
+             { fecha_registro: { '$ifNull': [ '$fecha_registro', 'NA' ] },
+               periodoFC: { '$ifNull': [ '$grupo.periodoFC', 'NA' ] },
+               telefono1: { '$ifNull': [ '$usuario.telefono_fijo', 0 ] } } },
+          { '$lookup': 
+             { from: 'instituciones_formadoras',
+               localField: 'oferta_formacion.institucion_formadora',
+               foreignField: '_id',
+               as: 'institucion' } },
+          { '$unwind': 
+             { path: '$institucion',
+               includeArrayIndex: 'arrIdx',
+               preserveNullAndEmptyArrays: true } },
+          { '$addFields': 
+             { funcion: 
+                { '$cond': 
+                   [ { '$gte': [ { '$size': '$funciones' }, 0 ] },
+                     { '$arrayElemAt': [ '$funciones', 0 ] },
+                     'NA' ] } } },
+          { '$lookup': 
+             { from: 'tipos_oferta',
+               localField: 'oferta_formacion.tipo_oferta',
+               foreignField: '_id',
+               as: 'tipo_oferta' } },
+          { '$addFields': { tipo_oferta: { '$arrayElemAt': [ '$tipo_oferta', 0 ] } } },
+          { '$project': 
+             { _id: { '$toString': '$_id' },
+               fecha_registro: 1,
+               resultado: 1,
+               idUsuario: { '$toString': '$usuario._id' },
+               CURP: '$usuario.usuario',
+               RFC: '$cct.RFC',
+               nombre: '$usuario.nombre',
+               primer_apell: { '$ifNull': [ '$usuario.primer_apell', '' ] },
+               segundo_apell: { '$ifNull': [ '$usuario.segundo_apell', '' ] },
+               nombre_completo: 
+                { '$concat': 
+                   [ '$usuario.nombre',
+                     ' ',
+                     '$usuario.primer_apell',
+                     ' ',
+                     '$usuario.segundo_apell' ] },
+               email: '$usuario.email',
+               telefono1: 1,
+               telefono2: '$usuario.telefono_movil',
+               idOferta: { '$toString': '$oferta_formacion._id' },
+               nombre_oferta: { '$arrayElemAt': [ '$oferta_formacion.nombre_curso', 0 ] },
+               horas: '$tipo_oferta.horas',
+               tipo_oferta: '$tipo_oferta.nombre',
+               institucion: '$institucion.nombre',
+               firmante_inst: '$institucion.firmante',
+               cargo_firmante_inst: '$institucion.cargo_firmante',
+               img: '$institucion.img',
+               idGrupo: { '$toString': '$grupo._id' },
+               sede: { '$ifNull': [ '$grupo.sede', 'NA' ] },
+               periodoFC: 1,
+               grupo: { '$ifNull': [ '$grupo.grupo', 'NA' ] },
+               fecha_ini: { '$ifNull': [ '$grupo.fecha_ini', '$oferta_formacion.fecha_ini' ] },
+               fecha_fin: { '$ifNull': [ '$grupo.fecha_fin', '$oferta_formacion.fecha_fin' ] },
+               nivel_educ: '$cct.NIVEL_EDUCATIVO',
+               cct: '$cct.CLAVE_CT',
+               plazas: 1,
+               funciones: 1,
+               funcion: 1,
+               sexo: { '$substr': [ '$usuario.usuario', 10, 1 ] },
+               entidad: { '$substr': [ '$usuario.usuario', 11, 2 ] } } } ] },
+    info: { readOnly: true } } ]

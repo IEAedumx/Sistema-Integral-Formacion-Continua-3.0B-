@@ -1,0 +1,21 @@
+db.usuarios.find({}).forEach(function (reg){
+        reg.nombre = reg.nombre.replace("Á","A");
+        reg.nombre = reg.nombre.replace("É","E");
+        reg.nombre = reg.nombre.replace("Í","I");
+        reg.nombre = reg.nombre.replace("Ó","O");
+        reg.nombre = reg.nombre.replace("Ú","U");
+    
+        reg.primer_apell = reg.primer_apell.replace("Á","A");
+        reg.primer_apell = reg.primer_apell.replace("É","E");
+        reg.primer_apell = reg.primer_apell.replace("Í","I");
+        reg.primer_apell = reg.primer_apell.replace("Ó","O");
+        reg.primer_apell = reg.primer_apell.replace("Ú","U");
+    
+        reg.segundo_apell = reg.segundo_apell.replace("Á","A");
+        reg.segundo_apell = reg.segundo_apell.replace("É","E");
+        reg.segundo_apell = reg.segundo_apell.replace("Í","I");
+        reg.segundo_apell = reg.segundo_apell.replace("Ó","O");
+        reg.segundo_apell = reg.segundo_apell.replace("Ú","U");
+        
+        db.usuarios.save(reg);
+    })
