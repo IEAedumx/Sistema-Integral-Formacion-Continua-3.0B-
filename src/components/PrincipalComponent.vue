@@ -6,14 +6,8 @@
 			</div>
 			<div class="col-md-4 text-center p-4">
 				<div class="text-center">
-					<b-card
-						title="Bienvenid@s"
-						:img-src="url + '/backassets/logos/IEA-logo-al100.png'"
-						img-alt="Image"
-						img-top
-						tag="article"
-						style="width: 100%"
-					>
+					<b-card title="Bienvenid@s" :img-src="url + '/backassets/logos/IEA-logo-al100.png'" img-alt="Image"
+						img-top tag="article" style="width: 100%">
 						<b-card-text>
 							Sistema Integral de Formación Continua v3.0
 						</b-card-text>
@@ -52,18 +46,59 @@ export default {
 			modalSelectAcceso: false,
 			modalRegistroIEA: false,
 			url: process.env.VUE_APP_URL,
+			url2: null,
+			token: null,
+			
 		};
 	},
 	methods: {
 		loginGoogle() {
 			this.modalSelectAcceso = false;
+			console.log('gAuth:', this.$gAuth)
+			/*
 			this.$gAuth.signIn().then((res) => {
 				console.log(res.getBasicProfile().getEmail());
 				this.gCuenta = res.getBasicProfile().getEmail();
 				this.loginIEA(this.gCuenta);
 			});
+			
+			*/
+			this.url2 = 'https://ieasis.iea.edu.mx/wsnomsis/Profile?valor=entrar&sys=ieasis'
+			window.location.href = this.url2;
+
+			const href = location.href;
+			this.galleta = href;
+			//console.log('app. href:',href);
+			if (this.galleta && this.galleta.includes(';')) {
+				const cookies = this.galleta.split(';');
+				let galleta = '';
+				for (let i = 0; i < cookies.length; i++) {
+					galleta = decodeURI(cookies[i]);
+					console.log(i, galleta);
+					if (galleta.trim().substring(0, 7) === 'profile') {
+						const cookie2 = galleta.split('|');
+						console.log(cookie2);
+						//localStorage.setItem('ID', cookie2[0].split('=')[1]);
+						//localStorage.setItem('Email', cookie2[1]);
+						this.gCuenta = cookie2[1];
+						//localStorage.setItem('Nombre', cookie2[2]);
+						//localStorage.setItem('Foto', cookie2[3]);
+					}
+					if (galleta.trim().substring(0, 5) === 'token') {
+						const data = galleta.split('|');
+						localStorage.setItem('accessToken', data[1]);
+						console.log(data);
+						this.token = data[1];
+						console.log('TOKEN: ',this.token);
+					}
+				}
+			}
+			if (this.gCuenta){
+				this.loginIEA(this.gCuenta);
+			}
 		},
 		msgBox(titulo, mensaje) {
+			console.log('titulo,mensaje',titulo,mensaje)
 			return this.$bvModal.msgBoxOk(mensaje, {
 				title: titulo,
 				size: 'md',
@@ -119,19 +154,23 @@ export default {
 	text-align: center;
 	margin-top: 20px;
 }
+
 .animcolorAzul {
 	background-color: rgba(29, 0, 107, 0.767);
 	cursor: pointer;
 	transition: 1s;
 }
+
 .animcolorAzul:hover {
 	background-color: rgb(218, 0, 125);
 }
+
 .animcolorGris {
 	background-color: rgba(99, 99, 99, 0.767);
 	cursor: pointer;
 	transition: 1s;
 }
+
 .animcolorGris:hover {
 	background-color: rgb(182, 211, 80);
 }

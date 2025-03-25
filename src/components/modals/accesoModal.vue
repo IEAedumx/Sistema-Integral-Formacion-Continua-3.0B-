@@ -9,6 +9,7 @@
 		>
 			<div class="row">
 				<div class="col-6">
+					
 					<b-jumbotron
 						class="h-100 animcolorAzul"
 						text-variant="white"
@@ -17,7 +18,9 @@
 						Acceso sólo Educación Básica pública y PAAE con cuenta institucional
 						@iea.edu.mx
 					</b-jumbotron>
+					
 				</div>
+				
 				<div class="col-6">
 					<b-jumbotron class="h-100 animcolorGris" text-variant="white">
 						Acceso a otros niveles e instituciones Educativas (Próximamente)

@@ -8,6 +8,7 @@ const email = require('../apis/mailerCtrl')
 const app = express();
 
 app.post('/usuarios/login', function (req, res) {
+    console.log("Buscando Usuario", this.req.body.usuario)
     Usuarios.findOne({
             usuario: req.body.usuario
         })

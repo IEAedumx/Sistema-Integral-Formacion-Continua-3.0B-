@@ -10,7 +10,7 @@ oferta_formacion: {type: DataTypes.STRING, allowNull: false},
 grupo: {type: DataTypes.STRING, allowNull: false},
 asistencia: {type: DataTypes.ARRAY},
 resultado: {type: DataTypes.STRING, allowNull: false},
-estatus: {type: DataTypes.ENUM(''), allowNull: false},
+estatus: {type: DataTypes.ENUM('INSCRIPCION ABIERTA', 'CANCELADO', 'EN CURSO', 'CERRADO', 'ACTIVO', 'INACTIVO', 'SUSPENDIDO', 'SIN CUPO', 'DISPONIBLE', 'CONCLUIDO', 'PENDIENTE'), allowNull: false},
 porcentaje_avance: {type: DataTypes.NUMBER, allowNull: false, defaultValue:0},
 fecha_registro: {type: DataTypes.DATE, allowNull: false},
 });

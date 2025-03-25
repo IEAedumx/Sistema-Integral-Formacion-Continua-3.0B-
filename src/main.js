@@ -19,10 +19,12 @@ import AdminReportesComponent from './components/subpaginas/AdminReportesCompone
 
 import GAuth from 'vue-google-oauth2'
 const gauthOption = {
-    clientId: 'C851437264401-e9hq0rhc6tb5eg7eqn4933f22bh89m86.apps.googleusercontent.com',
+    //clientId: 'C851437264401-e9hq0rhc6tb5eg7eqn4933f22bh89m86.apps.googleusercontent.com',
+    clientId: '629365982610-pfb04nvqaontq9ap97rn4al4g5t8qenh.apps.googleusercontent.com',
     scope: 'profile email',
     prompt: 'select_account'
 }
+console.log(GAuth,gauthOption)
 Vue.use(GAuth, gauthOption)
 //---------Variables globales-------------
 Vue.prototype.$usuario = function(usuario) {
